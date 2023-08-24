@@ -9,5 +9,23 @@
 
 <body>
   <script src="index.js" type="module"></script>
+  <h1>Analizador de texto</h1>
+  <div>
+    <ul>
+      <li data-testid="word-count" class="word-count">Palabras: 0</li>
+      <li data-testid="character-count" class="character-count">Caracteres: 0</li>
+      <li data-testid="character-no-spaces-count" class="character-no-spaces-count">Caracteres sin espacios: 0</li>
+      <li data-testid="number-count" class="number-count">Numeros: 0</li>
+      <li data-testid="cnumber-sum" class="cnumber-sum">Suma de numeros: 0</li>
+      <li data-testid="word-length-average">Caracteres: </li>
+    </ul>
+
+    <textarea id="text-area" cols="30" rows="10" name="user-input" ></textarea>
+
+    <button id="reset-button">Limpiar metricas</button>
+  </div>
 </body>
+<footer>
+  <p>Zhaira Lysset Santos Alfaro</p>
+</footer>
 </html>
