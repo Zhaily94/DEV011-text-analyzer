@@ -9,23 +9,39 @@
 
 <body>
   <script src="index.js" type="module"></script>
-  <h1>Analizador de texto</h1>
-  <div>
-    <ul>
-      <li data-testid="word-count" class="word-count">Palabras: 0</li>
-      <li data-testid="character-count" class="character-count">Caracteres: 0</li>
-      <li data-testid="character-no-spaces-count" class="character-no-spaces-count">Caracteres sin espacios: 0</li>
-      <li data-testid="number-count" class="number-count">Numeros: 0</li>
-      <li data-testid="cnumber-sum" class="cnumber-sum">Suma de numeros: 0</li>
-      <li data-testid="word-length-average">Caracteres: </li>
-    </ul>
+  <div id="contenedor">
+    <header><h1>Analizador de texto</h1></header>
+    
+    <section id="contenedor-principal">
 
-    <textarea id="text-area" cols="30" rows="10" name="user-input" ></textarea>
+      <div id="contenedor-input">
+        <textarea cols="30" rows="10" name="user-input" id="text-area"></textarea>
+        <div id="button">
+          <button id="reset-button">Reiniciar</button>
+        </div>
+      </div>
+      
+      <div id="contenedor-metricas">
+        <ul>
+          
+          <li data-testid="word-count" class="word-count li-style">Palabras: 0</li>
+          <li data-testid="character-count" class="character-count li-style">Caracteres: 0</li>
+          <li data-testid="character-no-spaces-count" class="character-no-spaces-count li-style">Caracteres sin espacios: 0</li>
+          <li data-testid="number-count" class="number-count li-style">Numeros: 0</li>
+          <li data-testid="cnumber-sum" class="cnumber-sum li-style">Suma de numeros: 0</li>
+          <li data-testid="word-length-average" class="word-length-average li-style">Caracteres promedio: 0</li>
+       
+        </ul>
+      </div>
 
-    <button id="reset-button">Limpiar metricas</button>
+    
+
+    </section>
+    
   </div>
 </body>
 <footer>
   <p>Zhaira Lysset Santos Alfaro</p>
 </footer>
+
 </html>
